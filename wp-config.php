@@ -14,24 +14,31 @@
  * @package WordPress
  */
 
+$DB_NAME = getenv('DB_NAME');
+$DB_USER = getenv('DB_USER');
+$DB_PASSWORD = getenv('DB_PASSWORD');
+$DB_HOST = getenv('DB_HOST');
+$DB_CHARSET = getenv('DB_CHARSET');
+$DB_COLLATE = getenv('DB_COLLATE');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'scorchdev_blue_db');
+define('DB_NAME', $DB_NAME);
 
 /** MySQL database username */
-define('DB_USER', 'b5863c8c4bcbb8');
+define('DB_USER', $DB_USER);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'da4f36d8');
+define('DB_PASSWORD', $DB_PASSWORD);
 
 /** MySQL hostname */
-define('DB_HOST', 'us-cdbr-azure-northcentral-a.cleardb.com');
+define('DB_HOST', $DB_HOST);
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', $DB_CHARSET);
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define('DB_COLLATE', $DB_COLLATE);
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -42,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '}Et*BY:0Wt;WUP&0p7|w)g-e,YlEPe)Yl?MTe#__2KXar1so^D@6%G/kAJbH4|.Z');
+define('SECURE_AUTH_KEY',  'I]T>$]D@}@d#ONI`XxjjM`#=z5pB>5*1A,leokt;|H}yA_-?o;qF-g2KUi^<,6,+');
+define('LOGGED_IN_KEY',    'JsE(grEyLRN!kF8pHxaYjNIy+{hNk7!v,7iU:2E~Rc3xq/w$i+_;g/TO8!xDW`Yv');
+define('NONCE_KEY',        '+A&.xAA7l,#?ipDs@VaIg7M!F;V,iO6+l@taOkusg9!k;.ENpa!C|.lsA!@J7Tf(');
+define('AUTH_SALT',        '|^B]y2sZM=*|H$dKC`4I-b32csVf!7p#0%O;An(cR}kO$+-FZ_Z|41WARdg3}z3h');
+define('SECURE_AUTH_SALT', '4_+7B*v@a-Ek~7q?)-!H(q0-@c/)<)NUD1C(5S|=H>=@p+/X3oL(.}+T8G}~D,=N');
+define('LOGGED_IN_SALT',   'y:6&o]s7P;| ._[~Zz|e:0_d!Dd?Zy|({u|dnrkD/-#rwLtrE1ltA)zBTJvJ|Ns-');
+define('NONCE_SALT',       'q)ZKJ$*}>Y# jR_+c;y[zX|`sK4HKS-N-1t3K:ZT/6D{3W(XZm;)=vd)^S::,,#a');
 
 /**#@-*/
 
